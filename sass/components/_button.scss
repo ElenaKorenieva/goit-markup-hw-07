@@ -1,4 +1,4 @@
-.button {
+%button {
     display: inline-block;
     padding: 10px 32px;
     color: inherit;
@@ -18,3 +18,34 @@
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
 }
+
+.button__primary {
+    @extend %button;
+    min-width: 216px;
+}
+
+
+.button__submit {
+        @extend %button;
+        display: block;
+        margin-top: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--primary-white-color);
+        min-width: 200px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+
+.button__subscribe {
+        @extend %button;
+        display: block;
+        margin-left: 12px;
+        width: 200px;
+        height: 50px;
+        text-align: left;
+        &:hover,
+        &:focus {
+        background-color: var(--background-grey-color);
+        color: var(--title-text-color);
+        }
+    }

@@ -43,35 +43,3 @@
     line-height: 1.2;
     text-align: center;
 }
-
-.icon__list {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-}
-.cards__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color 250ms var(--timing-function);
-    &:hover,
-    &:focus {
-    background-color: var(--accent-color);
-    }
-}
-
-.icon__item:not(:last-child) {  
-    margin-right: 10px;
-}
-    
-.icon__icon {
-    fill: #afb1b8;
-    transition: fill 250ms var(--timing-function);
-    .cards__link:hover &,
-    .cards__link:focus & {
-    fill: #FFFFFF;
-    }
-}
