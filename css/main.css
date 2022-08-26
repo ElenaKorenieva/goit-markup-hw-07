@@ -187,7 +187,7 @@ body {
   margin-right: 10px;
 }
 
-.button__subscribe, .button__submit, .button__primary {
+.button__subscribe, .button__submit, .button__secondary, .button__primary {
   display: inline-block;
   padding: 10px 32px;
   color: inherit;
@@ -201,7 +201,7 @@ body {
   border-radius: 4px;
   transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
 }
-.button__subscribe:hover, .button__submit:hover, .button__primary:hover, .button__subscribe:focus, .button__submit:focus, .button__primary:focus {
+.button__subscribe:hover, .button__submit:hover, .button__secondary:hover, .button__primary:hover, .button__subscribe:focus, .button__submit:focus, .button__secondary:focus, .button__primary:focus {
   background-color: var(--background-grey-color);
   color: var(--title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -209,6 +209,22 @@ body {
 
 .button__primary {
   min-width: 216px;
+}
+
+.button__secondary {
+  display: inline-block;
+  padding: 6px 22px;
+  background-color: var(--background-grey-color);
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+}
+.button__secondary:hover, .button__secondary:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 .button__submit {
@@ -833,22 +849,6 @@ body {
 
 .filter__item:not(:last-child) {
   margin-right: 8px;
-}
-
-.button__secondary {
-  display: inline-block;
-  padding: 6px 22px;
-  background-color: var(--background-grey-color);
-  color: var(--title-text-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
-}
-.button__secondary:hover, .button__secondary:focus {
-  background-color: var(--accent-color);
-  color: var(--primary-white-color);
 }
 
 .portfolio-list {
