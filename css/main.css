@@ -71,15 +71,13 @@ body {
   font-size: 26px;
   line-height: 1.2;
 }
-
-.logo__text {
-  color: var(--accent-color);
-}
-
 .logo--white {
   color: var(--primary-white-color);
 }
 
+.logo__text {
+  color: var(--accent-color);
+}
 .logo__text--blue {
   color: var(--accent-color);
 }
