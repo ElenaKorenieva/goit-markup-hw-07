@@ -57,24 +57,21 @@
     height: 44px;
     border-radius: 50%;
     transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    }
 }
 
-// cards_icon
 .icon__item:not(:last-child) {  
     margin-right: 10px;
 }
     
-.cards__link:hover,
-.cards__link:focus {
-    background-color: var(--accent-color);
-}
-
 .icon__icon {
     fill: #afb1b8;
     transition: fill 250ms var(--timing-function);
-}
-
-.cards__link:hover .icon__icon,
-.cards__link:focus .icon__icon {
+    .cards__link:hover &,
+    .cards__link:focus & {
     fill: #FFFFFF;
+    }
 }

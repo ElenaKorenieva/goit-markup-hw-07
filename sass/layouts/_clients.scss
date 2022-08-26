@@ -17,17 +17,11 @@
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     transition: border-color 250ms var(--timing-function);
-}
-.clients__link:hover,
-.clients__link:focus {
+    &:hover,
+    &:focus {
     border-color: var(--accent-color);
-    /* outline-color: var(--accent-color); */
     fill: var(--accent-color);
-}
-
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-    fill: inherit;
+    }
 }
 
 .clients__icon {
@@ -35,4 +29,8 @@
     height: 60px;
     fill: #afb1b8;
     transition: fill 250ms var(--timing-function);
+    .clients__link:hover &,
+    .clients__link:focus & {
+    fill: inherit;
+    }
 }
