@@ -5,9 +5,7 @@
 .section__headling {
     display: inline-block;
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
+    @include font(36, 700, 1.2);
     text-align: center;
 }
 .visually-hidden {

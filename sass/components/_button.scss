@@ -3,11 +3,8 @@
     padding: 10px 32px;
     color: inherit;
     background-color: var(--accent-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.9;
+    @include font(16, 700, 1.9, 0.06);
     text-align: center;
-    letter-spacing: 0.06em;
     border: 1px solid transparent;
     border-radius: 4px;
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
@@ -30,9 +27,7 @@
     padding: 6px 22px;
     background-color: var(--background-grey-color);
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.6;
+    @include font(16, 500, 1.6, 0.06);
     text-align: center;
     transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
     &:hover,

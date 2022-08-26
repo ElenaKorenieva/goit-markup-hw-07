@@ -72,11 +72,8 @@
     display: inline-block;
     margin-bottom: 12px;
     width: 100%;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
+    @include font(20, 700, 1.15);
     text-align: center;
-    letter-spacing: 0.03em;
 }
 
 .backdrop__form-field {
@@ -94,10 +91,7 @@
 .backdrop__label {
     margin-bottom: 4px;
     font-family: Roboto, sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
+    @include font(12, 400, 1.67, 0.01);
     color: var(--primary-text-color);
 }
 
@@ -142,10 +136,7 @@
     height: 120px;
     resize: none;
     padding: 12px 16px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.67;
-    letter-spacing: 0.01em;
+    @include font(12, 400, 1.67, 0.01);
     color:  rgba(117, 117, 117, 0.5);
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -191,10 +182,7 @@
 
 .backdrop__checkbox-label {
     color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+    @include font(14, 400, 1.71, 0.03);
 }
 
 .backdrop__checkbox-link {

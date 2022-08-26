@@ -28,10 +28,7 @@
     height: 76px;
     padding: 0 4px;
     color: var(--title-text-color);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+    @include font(14, 500, 1.1, 0.02);
     transition: color 250ms var(--timing-function);
     &:hover, 
     &:focus {
@@ -73,10 +70,7 @@
     align-items: center;
     color: var(--primary-text-color);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
+    @include font(14, 500, 1.1, 0.02);
     transition: color 250ms var(--timing-function);
     &:hover,
     &:focus {

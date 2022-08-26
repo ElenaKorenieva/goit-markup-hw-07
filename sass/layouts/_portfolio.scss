@@ -56,10 +56,7 @@
     padding: 63px 24px;
     bottom: 0;
     left: 0;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
+    @include font(18, 400, 1.56);
     background-color: rgba(33, 150, 243, 0.9);
     color: var(--primary-white-color);
     transform: translateY(101%);
@@ -81,17 +78,12 @@
 
 .portfolio-list__headling {
     color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
+    @include font(18, 700, 2, 0.06);
     text-transform: capitalize;
 }
 
 .portfolio-list__text {
     margin-top: 4px;
     color: var(--primary-text-color);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.9;
+    @include font(16, 400, 1.9);
 }
