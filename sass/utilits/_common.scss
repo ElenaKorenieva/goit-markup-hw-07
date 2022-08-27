@@ -2,12 +2,15 @@
     padding: 94px 0;
 }
 
-.section__headling {
-    display: inline-block;
-    margin-bottom: 50px;
-    @include font(36, 700, 1.2);
+.section--centred {
     text-align: center;
 }
+
+.section--with-padding {
+    padding-bottom: 47px;
+    text-align: center;
+}
+
 .visually-hidden {
     position: absolute;
     white-space: nowrap;

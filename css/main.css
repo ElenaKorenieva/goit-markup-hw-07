@@ -139,7 +139,7 @@ body {
   background-color: var(--accent-color);
 }
 
-.contacts__list {
+.contacts {
   display: flex;
   margin-left: auto;
 }
@@ -184,6 +184,16 @@ body {
   width: 10px;
   height: 16px;
   margin-right: 10px;
+}
+
+.section__headling {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
 
 .button__subscribe, .button__submit, .button__secondary, .button__primary {
@@ -253,13 +263,12 @@ body {
   padding: 94px 0;
 }
 
-.section__headling {
-  display: inline-block;
-  margin-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
+.section--centred {
+  text-align: center;
+}
+
+.section--with-padding {
+  padding-bottom: 47px;
   text-align: center;
 }
 
@@ -303,10 +312,6 @@ body {
   text-transform: uppercase;
 }
 
-.section__features {
-  padding-bottom: 47px;
-}
-
 .grid {
   display: flex;
   color: var(--primary-text-color);
@@ -347,11 +352,6 @@ body {
   align-items: center;
   margin-right: 0;
   background-color: var(--background-grey-color);
-}
-
-.section__specialization {
-  padding-top: 47px;
-  text-align: center;
 }
 
 .gallery {
@@ -397,13 +397,13 @@ body {
   color: var(--primary-white-color);
 }
 
-.icon__list {
+.socials {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-.cards__link {
+.socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -412,23 +412,35 @@ body {
   border-radius: 50%;
   transition: background-color 250ms var(--timing-function);
 }
-.cards__link:hover, .cards__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
 
-.icon__item:not(:last-child) {
+.socials__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.icon__icon {
+.socials__icon {
   fill: #afb1b8;
   transition: fill 250ms var(--timing-function);
 }
-.cards__link:hover .icon__icon, .cards__link:focus .icon__icon {
+.socials__link:hover .socials__icon, .socials__link:focus .socials__icon {
   fill: #FFFFFF;
 }
 
-.section__our-team {
+.socials__link--dark {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.socials__link--dark:not(:first-child) {
+  margin-left: 10px;
+}
+
+.socials__icon--white {
+  fill: var(--primary-white-color);
+}
+
+.section--grey {
   text-align: center;
   background-color: var(--background-grey-color);
 }
@@ -476,11 +488,7 @@ body {
   text-align: center;
 }
 
-.section__clients {
-  text-align: center;
-}
-
-.clients__list {
+.clients {
   display: flex;
   justify-content: space-between;
 }
@@ -577,32 +585,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-}
-
-.join-us__list {
-  display: flex;
-}
-
-.join-us__link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms var(--timing-function);
-}
-.join-us__link:hover, .join-us__link:focus {
-  background-color: var(--accent-color);
-}
-
-.join-us__item:not(:first-child) {
-  margin-left: 10px;
-}
-
-.join-us__icon {
-  fill: var(--primary-white-color);
 }
 
 .subscribe {
